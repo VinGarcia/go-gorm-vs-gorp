@@ -1,6 +1,5 @@
 
-run-gorm:
-	go run ./gorm/...
+TIME=1s
 
 bench:
-	go test -bench=. -benchtime 30s
+	go test -bench=. -benchtime $(TIME)
